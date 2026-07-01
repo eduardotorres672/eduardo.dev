@@ -52,4 +52,4 @@ portfolio/
 
 ---
 
-*Built with 💜 in São Paulo*
+*Built in São Paulo*
