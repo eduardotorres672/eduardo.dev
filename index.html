@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Eduardo Cosi — Desenvolvedor</title>
+<meta name="description" content="Portfólio de Eduardo Cosi — estudante de ADS em transição para desenvolvimento full-stack, back-end e dados. Conhecimento intermediário em HTML/CSS, estudando JavaScript e TypeScript, projetos com Python, Firebase e Supabase."/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Eduardo Cosi — Desenvolvedor"/>
+<meta property="og:description" content="Portfólio de Eduardo Cosi — projetos full-stack com React, TypeScript, Python, Firebase e Supabase."/>
+<meta property="og:url" content="https://eduardocosi.dev/"/>
+<meta property="og:locale" content="pt_BR"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Eduardo Cosi — Desenvolvedor"/>
+<meta name="twitter:description" content="Portfólio de Eduardo Cosi — projetos full-stack com React, TypeScript, Python, Firebase e Supabase."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-id">
+    <div class="nav-name">Eduardo Cosi</div>
+    <div class="nav-role">Desenvolvedor Junior</div>
+  </div>
+  <button class="nav-menu" id="menuOpenBtn" aria-haspopup="true" aria-expanded="false" aria-controls="menuOverlay">
+    Menu
+    <svg viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <line x1="0" y1="1" x2="20" y2="1"/>
+      <line x1="0" y1="7" x2="20" y2="7"/>
+      <line x1="0" y1="13" x2="20" y2="13"/>
+    </svg>
+  </button>
+</nav>
+
+<!-- MENU OVERLAY -->
+<div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+  <button class="menu-close" id="menuCloseBtn">Fechar ✕</button>
+  <ul>
+    <li><a href="#projects">Projetos</a></li>
+    <li><a href="#skills">Conhecimentos</a></li>
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#experience">Experiência</a></li>
+    <li><a href="#contact">Contato</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-eyebrow">
+    <div class="hero-dot"></div>
+    disponivel para estagio · Sao Paulo, BR
+  </div>
+  <h1 class="hero-title reveal">
+    Eduardo <span class="dim">Cosi.</span>
+  </h1>
+  <div class="hero-bottom reveal">
+    <p class="hero-sub">Tenho conhecimento intermediário em HTML e CSS, estou estudando JavaScript e TypeScript/React, e construo projetos full-stack reais com Python, Firebase e Supabase — com interesse em back-end e Inteligência Artificial.</p>
+    <div class="hero-links">
+      <a href="#projects" class="hero-link dark">Ver projetos</a>
+      <a href="https://github.com/eduardotorres672" target="_blank" class="hero-link">GitHub</a>
+      <a href="https://linkedin.com/in/eduardocosi" target="_blank" class="hero-link">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <span class="s-eyebrow">Alguns Projetos</span>
+    <h2 class="s-title reveal">Meus melhores<br/>projetos.</h2>
+
+    <div class="proj-grid">
+
+      <!-- WhatsApp Sender -->
+      <div class="proj-card reveal">
+        <div class="proj-bg"></div>
+        <div class="proj-mockup">
+          <div class="proj-mockup-bar"><div class="dot-r"></div><div class="dot-y"></div><div class="dot-g"></div></div>
+          <div class="proj-mockup-screen">
+            <div class="proj-code">
+              <span class="c-purple">import</span><span class="c-green"> supabase</span><span>, zapi</span>
+              <span class="c-gray"># filtra pendentes</span>
+              <span><span class="c-blue">contacts</span> = db.<span class="c-yellow">query</span>(</span>
+              <span>  <span class="c-orange">"sent_at IS NULL"</span></span>
+              <span>)</span>
+              <span class="c-purple">for</span> c <span class="c-purple">in</span> <span class="c-blue">contacts</span>:</span>
+              <span>  zapi.<span class="c-yellow">send</span>(c, template)</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card-inner">
+          <div class="proj-bottom">
+            <a href="https://github.com/eduardotorres672/zapi-supabase-whatsapp" target="_blank" class="proj-url-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              github.com/eduardotorres672
+            </a>
+            <div class="proj-name">WhatsApp Sender</div>
+            <div class="proj-desc">Templates via CLI · modo dry-run · Supabase + Z-API</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CodeDrift -->
+      <div class="proj-card reveal">
+        <div class="proj-bg"></div>
+        <div class="proj-mockup">
+          <div class="proj-mockup-bar"><div class="dot-r"></div><div class="dot-y"></div><div class="dot-g"></div></div>
+          <div class="proj-mockup-screen">
+            <div class="proj-code">
+              <span class="c-gray">$ codedrift check .</span>
+              <span class="c-green">Scanning 47 files...</span>
+              <span></span>
+              <span class="c-orange">! 3 divergencias encontradas</span>
+              <span class="c-blue">  parse_user()</span><span class="c-gray"> — desatualizado</span>
+              <span class="c-blue">  send_email()</span><span class="c-gray"> — assinatura</span>
+              <span></span>
+              <span class="c-green">Health score: 87/100</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card-inner">
+          <div class="proj-bottom">
+            <a href="https://github.com/eduardotorres672/CodeDrift" target="_blank" class="proj-url-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              github.com/eduardotorres672
+            </a>
+            <div class="proj-name">CodeDrift</div>
+            <div class="proj-desc">CLI que sincroniza codigo e documentacao · LLM + GitHub Actions</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="proj-grid-3">
+
+      <!-- Nexus Arena -->
+      <div class="proj-card reveal">
+        <div class="proj-bg"></div>
+        <div class="proj-mockup">
+          <div class="proj-mockup-bar"><div class="dot-r"></div><div class="dot-y"></div><div class="dot-g"></div></div>
+          <div class="proj-mockup-screen">
+            <div class="proj-code">
+              <span class="c-orange">&lt;!-- HTML puro --&gt;</span>
+              <span class="c-blue">.leaderboard</span> {</span>
+              <span>  <span class="c-purple">display</span>: <span class="c-green">grid</span>;</span>
+              <span>  <span class="c-purple">animation</span>: <span class="c-green">slideIn</span>;</span>
+              <span>}</span>
+              <span class="c-gray">/* zero deps */</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card-inner">
+          <div class="proj-bottom">
+            <a href="https://github.com/eduardotorres672/Nexus-Arena" target="_blank" class="proj-url-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Nexus Arena
+            </a>
+            <div class="proj-name">Nexus Arena</div>
+            <div class="proj-desc">E-sports · HTML/CSS/JS Vanilla</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QR Code -->
+      <div class="proj-card reveal">
+        <div class="proj-bg"></div>
+        <div class="proj-mockup">
+          <div class="proj-mockup-bar"><div class="dot-r"></div><div class="dot-y"></div><div class="dot-g"></div></div>
+          <div class="proj-mockup-screen">
+            <div class="proj-code">
+              <span class="c-blue">const</span> <span class="c-yellow">qr</span> = <span class="c-purple">new</span> QRCode({</span>
+              <span>  <span class="c-green">logo</span>: upload,</span>
+              <span>  <span class="c-green">gradient</span>: <span class="c-orange">true</span>,</span>
+              <span>  <span class="c-green">export</span>: [<span class="c-orange">'svg','png'</span>]</span>
+              <span>})</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card-inner">
+          <div class="proj-bottom">
+            <a href="https://github.com/eduardotorres672/Gerador-de-Qr-code" target="_blank" class="proj-url-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              QR Code Generator
+            </a>
+            <div class="proj-name">QR Code Generator</div>
+            <div class="proj-desc">React 19 + Firebase · Controle por voz e modo monocromático</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quiz -->
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <span class="s-eyebrow">Estudos</span>
+    <h2 class="s-title reveal">Meus<br/>Conhecimentos.</h2>
+
+    <div class="skills-intro">
+      <div class="reveal">
+        <div class="skills-body">
+          <p>Tenho <strong>conhecimento intermediário em HTML e CSS</strong> — construo layouts responsivos e estou aprofundando animações com <strong>Framer Motion</strong> e design systems com <strong>Tailwind CSS 4</strong>. Estou estudando <strong>JavaScript</strong> e evoluindo ativamente em <strong>TypeScript</strong> e <strong>React 19</strong>, usando Vite como base de build.</p>
+          <p>Construo back-ends e automacoes com <strong>Python, Firebase</strong> (Auth, Firestore, Cloud Storage, Rules) <strong>e Supabase</strong>, alem de <strong>SQL</strong> para queries, joins e filtragem de dados.</p>
+          <p>No dia a dia, uso <strong>Excel Avancado</strong> para construir dashboards e indicadores — uma ponte direta entre minha experiencia profissional e analise de dados.</p>
+          <p><strong>Ingles fluente</strong> me permite consumir documentacao, papers e comunidades internacionais sem atrito.</p>
+        </div>
+        <div class="skills-chips" style="margin-top:24px">
+          <span class="skill-chip">estudando JavaScript</span>
+          <span class="skill-chip">estudando TypeScript</span>
+          <span class="skill-chip">Node.js</span>
+          <span class="skill-chip">React 19</span>
+          <span class="skill-chip">Tailwind CSS 4</span>
+          <span class="skill-chip">Framer Motion</span>
+          <span class="skill-chip">SQL</span>
+          <span class="skill-chip">IA aplicada</span>
+          <span class="skill-chip">ADS · 2027</span>
+        </div>
+        <div class="lang-row">
+          <div class="lang-badge"><span class="lang-code">PT</span><span class="lang-level">Nativo</span></div>
+          <div class="lang-badge"><span class="lang-code">EN</span><span class="lang-level">Fluente</span></div>
+          <div class="lang-badge"><span class="lang-code">ES</span><span class="lang-level">Intermediário</span></div>
+          <div class="lang-badge"><span class="lang-code">FR</span><span class="lang-level">Básico</span></div>
+        </div>
+      </div>
+
+      <!-- Tech icon grid — SVG logos inline -->
+      <div class="tech-grid reveal">
+
+        <!-- HTML5 -->
+        <div class="tech-icon" title="HTML5">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30z" fill="#e44d26"/><path d="M16 27.858l8.17-2.265 1.922-21.532H16z" fill="#f16529"/><path d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.27l.074.83.759 8.517H16zm0 8.475l-.014.004-3.442-.929-.22-2.465H9.221l.433 4.852 6.332 1.758.014-.004z" fill="#ebebeb"/><path d="M15.985 13.407v3.091h3.806l-.358 4.009-3.448.93v3.216l6.337-1.757.046-.522.727-8.148.075-.82zm0-6.256v3.091h7.466l.062-.694.141-1.567.074-.83z" fill="#fff"/></svg>
+        </div>
+
+        <!-- CSS3 -->
+        <div class="tech-icon" title="CSS3">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30z" fill="#1572b6"/><path d="M16 27.858l8.17-2.265 1.922-21.532H16z" fill="#33a9dc"/><path d="M16 13.191h4.09l.282-3.165H16V6.935H23.73l-.074.83-.759 8.517H16zM16 21.499l-.014.004-3.442-.929-.22-2.466H9.221l.433 4.853 6.332 1.758.014-.004z" fill="#ebebeb"/><path d="M15.985 13.191v3.091h-3.806l-.358 4.009 3.448.93v3.216l-6.337-1.757-.046-.521-.727-8.148-.075-.82zm0-6.256v3.091H8.519l-.062-.694-.141-1.567-.074-.83z" fill="#fff"/></svg>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="tech-icon" title="JavaScript">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M2 2h28v28H2z" fill="#f7df1e"/><path d="M20.809 23.875a2.866 2.866 0 0 0 2.6 1.6c1.09 0 1.787-.545 1.787-1.3 0-.9-.716-1.222-1.916-1.747l-.658-.282c-1.9-.809-3.16-1.822-3.16-3.964 0-1.973 1.5-3.476 3.853-3.476a3.889 3.889 0 0 1 3.742 2.107l-2.048 1.315a1.789 1.789 0 0 0-1.694-1.128 1.147 1.147 0 0 0-1.262 1.128c0 .788.487 1.109 1.613 1.598l.658.282c2.237.959 3.5 1.938 3.5 4.138 0 2.37-1.862 3.666-4.362 3.666a5.059 5.059 0 0 1-4.776-2.689zm-9.295.228a1.609 1.609 0 0 0 1.534.9c.787 0 1.285-.394 1.285-1.928v-10.4h2.532v10.443c0 3.176-1.863 4.618-4.584 4.618a4.765 4.765 0 0 1-4.533-2.832z"/></svg>
+        </div>
+
+        <!-- TypeScript -->
+        <div class="tech-icon" title="TypeScript">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M0 16v16h32V0H0zm26.262-1.18c.695.173 1.228.495 1.712.99.252.27.625.764.657.883.01.035-1.183.834-1.906 1.28-.027.018-.13-.097-.248-.272-.352-.513-.72-.734-1.283-.773-.826-.056-1.358.376-1.354 1.09a.99.99 0 0 0 .114.496c.18.373.512.596 1.554.944 1.921.656 2.742 1.09 3.252 1.707.568.688.694 1.788.312 2.608-.423.896-1.473 1.504-2.952 1.706-.457.064-1.54.054-2.03-.016-.07-.011-.28-.044-.47-.074a5.256 5.256 0 0 1-2.507-1.336c-.252-.265-.742-.907-.71-.953a2.3 2.3 0 0 1 .255-.187l1.02-.588.79-.456.166.24c.233.356.74.84 1.048.999.883.466 2.097.4 2.695-.14a1.06 1.06 0 0 0 .146-1.32c-.2-.29-.605-.53-1.76-.97-1.321-.5-1.89-.81-2.408-1.303a4.694 4.694 0 0 1-.965-1.398c-.135-.307-.139-.397-.15-1.07-.01-.722.012-.953.137-1.34.456-1.42 1.688-2.31 3.374-2.432.46-.034 1.525.009 1.978.12zM17.5 15.086l.008 1.246h-3.97v11.275h-2.432V16.332H7.145v-1.22c0-.675.014-1.235.03-1.25.015-.01 2.34-.017 5.172-.012l5.14.012z"/></svg>
+        </div>
+
+        <!-- React -->
+        <div class="tech-icon" title="React">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="2.147" fill="#61dafb"/><path d="M16 11.21c4.547 0 8.74.632 11.869 1.653 3.771 1.232 6.131 3.097 6.131 5.137 0 2.124-2.527 4.09-6.5 5.343-3.081.966-7.167 1.473-11.5 1.473-4.452 0-8.622-.484-11.734-1.484C.39 22.082-2 20.1-2 17.953c0-2.023 2.209-3.87 5.869-5.09C6.92 11.858 11.294 11.21 16 11.21z" fill="none" stroke="#61dafb" stroke-width="1.4"/><path d="M11.528 13.61c2.274-3.94 4.923-7.15 7.263-9.117 2.801-2.362 5.461-3.218 7.209-2.196 1.823 1.056 2.49 4.018 1.74 8.062-.567 3.07-2.05 6.71-4.096 10.195-2.228 3.857-4.754 7.126-7.12 9.097-2.983 2.449-5.766 3.226-7.524 2.17-1.706-.99-2.35-3.686-1.733-7.444.514-3.12 2.013-6.924 4.261-10.768z" fill="none" stroke="#61dafb" stroke-width="1.4"/><path d="M11.539 18.406c-2.285-3.932-3.687-7.862-3.914-11.009-.272-3.757.87-6.255 2.617-7.277 1.821-1.057 4.671-.163 7.528 2.265 2.238 1.903 4.465 4.892 6.447 8.456 2.146 3.858 3.628 7.802 3.873 10.938.311 3.944-.902 6.623-2.718 7.675-1.764 1.024-4.409.234-7.168-2.098-2.29-1.929-4.617-5.049-6.665-8.95z" fill="none" stroke="#61dafb" stroke-width="1.4"/></svg>
+        </div>
+
+        <!-- Python -->
+        <div class="tech-icon" title="Python">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M15.885 2.1c-7.1 0-6.651 3.07-6.651 3.07v3.19h6.752v1H6.545S2 8.8 2 16c0 7.2 3.912 6.951 3.912 6.951h2.337v-3.361s-.124-3.912 3.862-3.912h6.629s3.737.06 3.737-3.618V5.289S22.947 2.1 15.885 2.1zM12.055 4.2a1.214 1.214 0 1 1-1.214 1.214A1.215 1.215 0 0 1 12.055 4.2z" fill="url(#a)"/><path d="M16.115 29.9c7.1 0 6.651-3.07 6.651-3.07v-3.19H15.98v-1h9.441S30 23.2 30 16c0-7.2-3.912-6.951-3.912-6.951h-2.337v3.361s.124 3.912-3.862 3.912H13.26s-3.737-.06-3.737 3.618v6.771S9.053 29.9 16.115 29.9zM19.945 27.8a1.214 1.214 0 1 1 1.214-1.214A1.215 1.215 0 0 1 19.945 27.8z" fill="url(#b)"/><defs><linearGradient id="a" x1="9.638" y1="3.128" x2="22.525" y2="16.239" gradientUnits="userSpaceOnUse"><stop stop-color="#387EB8"/><stop offset="1" stop-color="#366994"/></linearGradient><linearGradient id="b" x1="9.638" y1="3.128" x2="22.525" y2="16.239" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE052"/><stop offset="1" stop-color="#FFC331"/></linearGradient></defs></svg>
+        </div>
+
+        <!-- Git -->
+        <div class="tech-icon" title="Git">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M30.73 14.673L17.326 1.268a1.832 1.832 0 0 0-2.591 0l-2.579 2.58 3.278 3.278a2.175 2.175 0 0 1 2.75 2.769l3.158 3.157a2.17 2.17 0 0 1 2.248.518 2.18 2.18 0 0 1 0 3.083 2.184 2.184 0 0 1-3.086 0 2.183 2.183 0 0 1-.44-2.382l-2.946-2.945v7.75a2.19 2.19 0 0 1 .576.403 2.183 2.183 0 0 1 0 3.083 2.184 2.184 0 0 1-3.086 0 2.183 2.183 0 0 1 0-3.083 2.18 2.18 0 0 1 .713-.472V10.72a2.18 2.18 0 0 1-.713-.472 2.183 2.183 0 0 1-.441-2.378L10.89 4.615 1.27 14.237a1.833 1.833 0 0 0 0 2.591L14.674 30.23a1.832 1.832 0 0 0 2.591 0L30.73 17.265a1.835 1.835 0 0 0 0-2.592" fill="#f05032"/></svg>
+        </div>
+
+        <!-- GitHub -->
+        <div class="tech-icon" title="GitHub">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.71 3.71 0 0 0-1.62-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.45 3 3 0 0 0 4.08 1.16 2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76 5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7 5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.91a3.33 3.33 0 0 1 .95 2.59v3.84c0 .46.25.81 1 .67A14 14 0 0 0 16 2z" fill="#1b1f23"/></svg>
+        </div>
+
+        <!-- Firebase -->
+        <div class="tech-icon" title="Firebase">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M5.23 23.8l.79-14.35 8.53-9.45z" fill="#ffa000"/><path d="M5.23 23.8l9.24-23.8 5.72 9.96z" fill="#f57f17"/><path d="M22.46 15.29l-3.27-5.33-8.72 13.84z" fill="#ffa000"/><path d="M5.23 23.8L26.77 18.48 22.46 15.29z" fill="#ffca28"/><path d="M5.23 23.8l12-6.15 2.23 4.49z" fill="#ffa000"/></svg>
+        </div>
+
+        <!-- Supabase -->
+        <div class="tech-icon" title="Supabase">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M18.138 30.948c-.668.849-2.028.383-2.041-.695l-.196-13.215H27.03c1.841 0 2.87 2.104 1.726 3.562z" fill="url(#sb1)"/><path d="M18.138 30.948c-.668.849-2.028.383-2.041-.695l-.196-13.215H27.03c1.841 0 2.87 2.104 1.726 3.562z" fill="url(#sb2)" fill-opacity=".2"/><path d="M13.862 1.052c.668-.849 2.028-.383 2.041.695l.118 13.215H2.97c-1.841 0-2.87-2.104-1.726-3.562z" fill="#3ECF8E"/><defs><linearGradient id="sb1" x1="15.9" y1="16.038" x2="24.503" y2="27.354" gradientUnits="userSpaceOnUse"><stop stop-color="#249361"/><stop offset="1" stop-color="#3ECF8E"/></linearGradient><linearGradient id="sb2" x1="13.667" y1="13.667" x2="20.735" y2="22.568" gradientUnits="userSpaceOnUse"><stop/><stop offset="1" stop-opacity="0"/></linearGradient></defs></svg>
+        </div>
+
+        <!-- SQL / Database -->
+        <div class="tech-icon" title="SQL">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="16" cy="9" rx="11" ry="4" fill="#336791" stroke="#336791" stroke-width="1"/>
+            <path d="M5 9v6c0 2.21 4.925 4 11 4s11-1.79 11-4V9" stroke="#336791" stroke-width="1.5" fill="none"/>
+            <path d="M5 15v6c0 2.21 4.925 4 11 4s11-1.79 11-4v-6" stroke="#336791" stroke-width="1.5" fill="none"/>
+            <ellipse cx="16" cy="9" rx="11" ry="4" fill="#336791"/>
+            <text x="16" y="12.5" text-anchor="middle" fill="white" font-size="5.5" font-family="monospace" font-weight="700">SQL</text>
+          </svg>
+        </div>
+
+        <!-- Vite -->
+        <div class="tech-icon" title="Vite">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M29.53 7.2L16.64 30.25a.77.77 0 0 1-1.35 0L2.47 7.2a.77.77 0 0 1 .78-1.13l13.61 2.52a.77.77 0 0 0 .28 0L30.6 6.07a.77.77 0 0 1 .78 1.13h-.85z" fill="#41d1ff"/><path d="M21.68 2.17l-8.26 1.6-.47 8.58 2.23-.46 1.04-5.04 6.02-1.18z" fill="#bd34fe"/></svg>
+        </div>
+
+        <!-- Node.js -->
+        <div class="tech-icon" title="Node.js">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 2.247a1.333 1.333 0 0 0-.667.178L3.2 9.244A1.333 1.333 0 0 0 2.533 10.4v11.2a1.333 1.333 0 0 0 .667 1.156l12.133 7.02a1.333 1.333 0 0 0 1.334 0l12.133-7.02a1.333 1.333 0 0 0 .667-1.156V10.4a1.333 1.333 0 0 0-.667-1.156L16.667 2.425A1.333 1.333 0 0 0 16 2.247z" fill="#339933"/><path d="M16 7.5a.5.5 0 0 1 .25.067l7.5 4.333a.5.5 0 0 1 .25.433v8.667a.5.5 0 0 1-.25.433l-7.5 4.333a.5.5 0 0 1-.5 0l-7.5-4.333a.5.5 0 0 1-.25-.433v-8.667a.5.5 0 0 1 .25-.433l7.5-4.333A.5.5 0 0 1 16 7.5z" fill="#fff"/></svg>
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div class="tech-icon" title="Tailwind CSS">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 6.4c-3.733 0-6.067 1.867-7 5.6 1.4-1.867 3.033-2.567 4.9-2.1 1.065.266 1.826.04 2.367-.476.534-.51.86-1.18 1.733-1.18.933 0 1.51.578 1.978 1.69.65 1.547 1.92 2.166 3.422 1.79C25.07 11.39 26 10.187 26 8.4c-1.4 1.867-3.033 2.567-4.9 2.1-1.065-.266-1.826-.04-2.367.476-.534.51-.86 1.18-1.733 1.18-.933 0-1.51-.578-1.978-1.69C14.372 8.92 13.102 8.301 11.6 8.677A4.9 4.9 0 0 0 9 9.857c.7-.933 1.633-2.16 2.967-3.067A7.3 7.3 0 0 1 16 6.4z" fill="#38bdf8"/><path d="M9 16c-3.733 0-6.067 1.867-7 5.6 1.4-1.867 3.033-2.567 4.9-2.1 1.065.266 1.826.04 2.367-.476.534-.51.86-1.18 1.733-1.18.933 0 1.51.578 1.978 1.69.65 1.547 1.92 2.166 3.422 1.79C18.07 21 19 19.787 19 18c-1.4 1.867-3.033 2.567-4.9 2.1-1.065-.266-1.826-.04-2.367.476-.534.51-.86 1.18-1.733 1.18-.933 0-1.51-.578-1.978-1.69C7.372 18.52 6.102 17.9 4.6 18.277 6.43 16.93 7.6 16 9 16z" fill="#38bdf8"/></svg>
+        </div>
+
+        <!-- Framer Motion -->
+        <div class="tech-icon" title="Framer Motion">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M6 4h20v9.333H15.333z" fill="#0055ff"/><path d="M6 13.333h9.333L26 22.667H15.333v9.333z" fill="#0055ff"/><path d="M6 22.667h9.333V32z" fill="#0055ff"/></svg>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="s-eyebrow">Sobre</span>
+        <h2 class="s-title">Quem sou<br/>eu.</h2>
+        <div class="about-text">
+          <p>Sou estudante de <strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong>, com conclusão prevista para 2027, e busco minha primeira oportunidade na área de tecnologia — como jovem aprendiz, estagiário ou desenvolvedor júnior, com interesse em desenvolvimento web, back-end, aplicações full-stack e Inteligência Artificial.</p>
+          <p>Hoje trabalho como <strong>Auxiliar Administrativo na AS Brindes</strong>, onde lido com controle de estoque, registros de entrada e saída com rastreabilidade, e construo indicadores e relatórios semanais em Excel usando Tabelas Dinâmicas — experiência que me deu uma relação prática e diária com dados reais.</p>
+          <p>Tenho <strong>conhecimento intermediário em HTML e CSS</strong> — construo layouts responsivos e estou aprofundando animações e design systems. Estou estudando <strong>JavaScript</strong> e em evolução ativa em <strong>TypeScript e React 19</strong>, enquanto já aplico Python, Firebase, Supabase e SQL em projetos reais que resolvem problemas concretos.</p>
+          <p>Falo <strong>inglês fluente, espanhol intermediário e francês básico</strong> além do português nativo — o que me permite aprender com as melhores fontes do mundo sem barreira.</p>
+        </div>
+      </div>
+      <div class="stat-row reveal">
+        <div class="stat-box"><div class="stat-n">5+</div><div class="stat-l">Projetos no GitHub</div></div>
+        <div class="stat-box"><div class="stat-n">1+</div><div class="stat-l">Ano programando</div></div>
+        <div class="stat-box"><div class="stat-n">2027</div><div class="stat-l">Tec. ADS</div></div>
+        <div class="stat-box"><div class="stat-n">4</div><div class="stat-l">Idiomas: PT · EN · ES · FR</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <span class="s-eyebrow">Experiência</span>
+    <h2 class="s-title reveal">Onde já<br/>atuei.</h2>
+
+    <div class="exp-card reveal">
+      <div class="exp-top">
+        <span class="exp-role">Auxiliar Administrativo</span>
+        <span class="exp-period">Março 2025 – Atual</span>
+      </div>
+      <div class="exp-place">AS Brindes · São Paulo, SP</div>
+      <ul>
+        <li>Controle de estoque no Excel: registros de entrada, saída e inventário com rastreabilidade de movimentação de produtos.</li>
+        <li>Criação de planilhas de indicadores e relatórios semanais para acompanhamento operacional, usando Tabelas Dinâmicas e fórmulas avançadas.</li>
+        <li>Identificação e correção de divergências nos registros, reduzindo erros no controle de entradas e saídas do estoque.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-inner">
+    <span class="cta-pre">Precisa de um dev?</span>
+    <a href="mailto:eduardocosi1810@gmail.com" class="cta-title">
+      Vamos trabalhar juntos <span class="cta-arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <span class="contact-label">Contato</span>
+    <a href="mailto:eduardocosi1810@gmail.com" class="contact-email">eduardocosi1810@gmail.com</a>
+    <div class="contact-links">
+      <a href="https://github.com/eduardotorres672" target="_blank" class="contact-link">Github</a>
+      <a href="https://linkedin.com/in/eduardocosi" target="_blank" class="contact-link">LinkedIn</a>
+      <a href="tel:+5511967521239" class="contact-link">WhatsApp</a>
+    </div>
+
+    <div class="skills-map reveal">
+      <span class="map-fallback">Mapa indisponível — São Paulo, SP</span>
+      <iframe src="https://maps.google.com/maps?q=S%C3%A3o%20Paulo%2C%20SP&t=m&z=10&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — São Paulo, SP" style="position:relative; z-index:1;"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Eduardo Cosi</div>
+  <div class="footer-meta">São Paulo, BR · <span id="localClock">--:--</span> (hora local)</div>
+</footer>
+
+<!-- FLOATING MINI BUTTONS -->
+<a href="mailto:eduardocosi1810@gmail.com" class="float-mini mail" aria-label="Enviar e-mail">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+</a>
+<a href="#hero" class="float-mini top" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5,12 12,5 19,12"/></svg>
+</a>
+
+
+<script src="script.js"></script>
+</body>
+</html>
