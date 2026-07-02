@@ -2,7 +2,7 @@
 
 Portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro — sem frameworks, sem dependências.
 
-🔗 **[eduardocosi.dev](https://eduardocosi.dev)** *(em breve)*
+🔗 **[eduardocosi.dev](https://eduardocosi.dev)**
 
 ---
 
